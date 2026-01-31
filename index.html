@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01/31</title>
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+    <!-- Google Fonts Import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Autoplay audio -->
+    <audio id="background-audio" loop preload="auto">
+        <source src="assets/flyme.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <div class="container">
+        <header class="header">
+            <h1 id="main-header">HAPPY ONE YEAR MEGAN!!!!!!!!!</h1>
+            <p class="subtitle" id="love-button">❤️loved you for... </p>
+            <div class="time-tracker">
+                <div class="time-unit">
+                    <span class="time-value" id="days">365</span>
+                    <span class="time-label">days</span>
+                </div>
+                <div class="time-unit">
+                    <span class="time-value" id="hours">23</span>
+                    <span class="time-label">hours</span>
+                </div>
+                <div class="time-unit">
+                    <span class="time-value" id="minutes">59</span>
+                    <span class="time-label">minutes</span>
+                </div>
+                <div class="time-unit">
+                    <span class="time-value" id="seconds">59</span>
+                    <span class="time-label">seconds</span>
+                </div>
+            </div>
+            <!-- Hidden message overlay for header easter egg -->
+            <div id="nerd-message" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:20000;background:rgba(0,0,0,0.7);color:#fff;align-items:center;justify-content:center;font-size:2rem;font-family:'Caveat',cursive;text-align:center;">
+                <div style="width:100vw;display:flex;align-items:center;justify-content:center;height:100vh;">
+                    finally put my nerd skills to good use
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="photo-gallery">
+                <!-- Add your photos here with this structure -->
+                <!-- Replace "photo1.jpg" with your actual photo filenames -->
+                <div class="photo-frame" data-caption="we were the best maze solvers">
+                    <img src="assets/pics/maze.jpg" alt="Memory 1">
+                </div>
+                <div class="photo-frame" data-caption="me in gulfport">
+                    <img src="assets/pics/phone.jpeg" alt="Memory 2">
+                </div>
+                <div class="photo-frame" data-caption="knope 2012">
+                    <img src="assets/pics/haloween.jpg" alt="Memory 3">
+                </div>
+                <div class="photo-frame" data-caption="first store run">
+                    <img src="assets/pics/store.jpg" alt="Memory 4">
+                </div>
+                <div class="photo-frame" data-caption="kristoffs">
+                    <img src="assets/pics/arcade.jpg" alt="Memory 5">
+                </div>
+                <div class="photo-frame" data-caption="killed two fish with one fishing pole">
+                    <img src="assets/pics/fish.jpg" alt="Memory 6">
+                </div>
+                <div class="photo-frame" data-caption="we at the bean">
+                    <img src="assets/pics/bean.jpg" alt="Memory 6">
+                </div>
+                <div class="photo-frame" data-caption="hehe cute dock pic">
+                    <img src="assets/pics/dock.jpg" alt="Memory 6">
+                </div>
+                <div class="photo-frame" data-caption="I WANT CHICKEN NWO">
+                    <img src="assets/pics/heaterz.jpg" alt="Memory 6">
+                </div>
+                <div class="photo-frame" data-caption="tri dining">
+                    <img src="assets/pics/1.jpg" alt="Memory">
+                </div>
+                <div class="photo-frame" data-caption="MILKSDHAJE>
+                    <img src="assets/pics/2.jpg" alt="Memory">
+                </div>
+                <div class="photo-frame" data-caption="ribbon ice skate">
+                    <img src="assets/pics/3.jpg" alt="Memory">
+                </div>
+                <div class="photo-frame" data-caption="i am steve">
+                    <img src="assets/pics/4.jpg" alt="Memory">
+                </div>
+                <div class="photo-frame" data-caption="sashia and i">
+                    <img src="assets/pics/5.jpg" alt="Memory">
+                </div>
+                <div class="photo-frame" data-caption="zootopia">
+                    <img src="assets/pics/6.jpg" alt="Memory">
+                </div>
+                <div class="photo-frame" data-caption="bean pic part 2">
+                    <img src="assets/pics/7.jpg" alt="Memory">
+                </div>
+                <div class="photo-frame" data-caption="cute girl on the train">
+                    <img src="assets/pics/8.jpg" alt="Memory">
+                </div>
+                <div class="photo-frame" data-caption="megan kala burger">
+                    <img src="assets/pics/9.jpg" alt="Memory">
+                </div>
+                <div class="photo-frame" data-caption="we built epstein island">
+                    <img src="assets/pics/10.jpg" alt="Memory">
+                </div>
+                <div class="photo-frame" data-caption="my flavor place">
+                    <img src="assets/pics/11.jpg" alt="Memory">
+                </div>
+                <div class="photo-frame" data-caption="market visit">
+                    <img src="assets/pics/12.jpg" alt="Memory">
+                </div>
+                <div class="photo-frame" data-caption="jasons deli and jurassic park after gynecology appointment!!">
+                    <img src="assets/pics/13.jpg" alt="Memory">
+                </div>
+                <div class="photo-frame" data-caption="my irl barbie">
+                    <img src="assets/pics/14.jpg" alt="Memory">
+                </div>
+                <div class="photo-frame" data-caption="luh mexican food in wauconda">
+                    <img src="assets/pics/15.jpg" alt="Memory">
+                </div>
+                <div class="photo-frame" data-caption="hot aryan ramen lover">
+                    <img src="assets/pics/16.jpg" alt="Memory">
+                </div>
+                <div class="photo-frame" data-caption="the first supper">
+                    <img src="assets/pics/17.jpg" alt="Memory">
+                </div>
+                <div class="photo-frame" data-caption="pretty sunset">
+                    <img src="assets/pics/18.jpg" alt="Memory">
+                </div>
+                <div class="photo-frame" data-caption="hands up ">
+                    <img src="assets/pics/19.jpg" alt="Memory">
+                </div>
+                <div class="photo-frame" data-caption="photobombed...">
+                    <img src="assets/pics/20.jpg" alt="Memory">
+                </div>
+                <div class="photo-frame" data-caption="sweet as icecream">
+                    <img src="assets/pics/21.jpg" alt="Memory">
+                </div>
+                <div class="photo-frame" data-caption="carls cream">
+                    <img src="assets/pics/22.jpg" alt="Memory">
+                </div>
+                <div class="photo-frame" data-caption="uhhhh who is this">
+                    <img src="assets/pics/23.jpg" alt="Memory">
+                </div>
+                <div class="photo-frame" data-caption="the phaaaaaaaantom of the opera is herrreeeeeee">
+                    <img src="assets/pics/24.jpg" alt="Memory">
+                </div>
+                <!-- Add more photo frames as needed -->
+            </section>
+            <!-- Photo Viewer Modal -->
+            <div id="photo-modal" class="photo-modal" style="display:none;">
+                <div class="photo-modal-backdrop"></div>
+                <div class="photo-modal-content">
+                    <button class="photo-modal-close" id="photo-modal-close">&times;</button>
+                    <img id="photo-modal-img" src="" alt="Enlarged photo">
+                    <div id="photo-modal-caption" class="photo-modal-caption"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer class="site-quote">
+        <blockquote>
+            “With each word your tenderness grows, tearing my fear apart...<br>
+            and that laugh that wrinkles your nose, touches my foolish heart.”
+        </blockquote>
+    </footer>
+    <div class="site-copyright">&copy; Luke Oess 2026</div>
+    <script>
+        // Header click easter egg
+        let headerClickCount = 0;
+        const mainHeader = document.getElementById('main-header');
+        const nerdMessage = document.getElementById('nerd-message');
+        mainHeader.addEventListener('click', () => {
+            headerClickCount++;
+            if (headerClickCount === 5) {
+                nerdMessage.style.display = 'flex';
+                setTimeout(() => {
+                    nerdMessage.style.display = 'none';
+                    headerClickCount = 0;
+                }, 3000);
+            }
+        });
+        // Time tracker - calculate time since 01/31/2025
+        const startDate = new Date('2025-01-31T00:00:00').getTime();
+        
+        function updateTimer() {
+            const now = new Date().getTime();
+            const elapsed = now - startDate;
+            
+            const days = Math.floor(elapsed / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((elapsed % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((elapsed % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((elapsed % (1000 * 60)) / 1000);
+            
+            document.getElementById('days').textContent = days;
+            document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+            document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+            document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+        }
+        
+        // Update timer immediately and then every second
+        updateTimer();
+        setInterval(updateTimer, 1000);
+        
+        // Play audio on page load and user interaction
+        const audio = document.getElementById('background-audio');
+        
+        // Try to play on page load
+        function tryPlayAudio() {
+            audio.muted = false;
+            audio.play().catch(err => {
+                console.log('Autoplay blocked, waiting for user interaction');
+                document.addEventListener('click', playAudio);
+            });
+        }
+        
+        function playAudio() {
+            audio.muted = false;
+            audio.play().catch(err => console.log('Play failed:', err));
+            document.removeEventListener('click', playAudio);
+        }
+        
+        // Attempt to play on page load
+        window.addEventListener('load', tryPlayAudio);
+        
+        // Fallback: play on first user interaction
+        document.addEventListener('click', playAudio);
+        
+        // Heart flurry easter egg
+        const loveButton = document.getElementById('love-button');
+        loveButton.style.cursor = 'pointer';
+        
+        loveButton.addEventListener('click', (e) => {
+            e.stopPropagation();
+            // Create 20 hearts
+            for (let i = 0; i < 20; i++) {
+                const heart = document.createElement('div');
+                heart.className = 'floating-heart';
+                heart.innerHTML = '❤️';
+                heart.style.left = e.clientX + 'px';
+                heart.style.top = e.clientY + 'px';
+                document.body.appendChild(heart);
+
+                // Random drift in all directions
+                const driftX = (Math.random() - 0.5) * 600;
+                const driftY = (Math.random() - 0.5) * 600;
+                const duration = 1500 + Math.random() * 1000;
+
+                heart.animate([
+                    {
+                        transform: 'translate(0, 0) scale(1)',
+                        opacity: 1,
+                        offset: 0
+                    },
+                    {
+                        transform: `translate(${driftX}px, ${driftY}px) scale(0.5)`,
+                        opacity: 0,
+                        offset: 1
+                    }
+                ], {
+                    duration: duration,
+                    easing: 'cubic-bezier(0.25, 0.46, 0.45, 0.94)'
+                });
+
+                // Remove heart after animation completes
+                setTimeout(() => heart.remove(), duration);
+            }
+        });
+        
+        // Randomize and continuously move photos
+        const photos = document.querySelectorAll('.photo-frame');
+        const gallery = document.querySelector('.photo-gallery');
+
+        // Photo viewer modal logic
+        const photoModal = document.getElementById('photo-modal');
+        const photoModalImg = document.getElementById('photo-modal-img');
+        const photoModalClose = document.getElementById('photo-modal-close');
+        const photoModalBackdrop = photoModal.querySelector('.photo-modal-backdrop');
+
+        const photoModalCaption = document.getElementById('photo-modal-caption');
+        photos.forEach(photo => {
+            photo.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const img = photo.querySelector('img');
+                photoModalImg.src = img.src;
+                photoModalImg.alt = img.alt;
+                // Show caption if present
+                const caption = photo.getAttribute('data-caption') || '';
+                photoModalCaption.textContent = caption;
+                photoModalCaption.style.display = caption ? 'block' : 'none';
+                photoModal.style.display = 'block';
+                document.body.style.overflow = 'hidden'; // Prevent background scroll
+            });
+        });
+        // Hide caption on close
+        function closePhotoModal() {
+            photoModal.style.display = 'none';
+            photoModalImg.src = '';
+            photoModalCaption.textContent = '';
+            document.body.style.overflow = '';
+        }
+
+        function closePhotoModal() {
+            photoModal.style.display = 'none';
+            photoModalImg.src = '';
+            document.body.style.overflow = '';
+        }
+
+        photoModalClose.addEventListener('click', closePhotoModal);
+        photoModalBackdrop.addEventListener('click', closePhotoModal);
+        // Optional: close on Escape key
+        document.addEventListener('keydown', (e) => {
+            if (photoModal.style.display === 'block' && e.key === 'Escape') {
+                closePhotoModal();
+            }
+        });
+        
+        // Initialize with random positions
+        photos.forEach((photo, index) => {
+            photo.dataset.x = Math.random() * (gallery.offsetWidth - 200);
+            photo.dataset.y = Math.random() * (gallery.offsetHeight - 150);
+            photo.dataset.vx = (Math.random() - 0.5) * 2; // velocity x
+            photo.dataset.vy = (Math.random() - 0.5) * 2; // velocity y
+            photo.dataset.rotation = Math.random() * 30 - 15;
+            photo.dataset.rotationSpeed = (Math.random() - 0.5) * 2;
+            photo.dataset.isSpinning = false;
+            photo.dataset.spinCounter = 0;
+        });
+        
+        // Animation loop
+        function animate() {
+            photos.forEach((photo) => {
+                let x = parseFloat(photo.dataset.x);
+                let y = parseFloat(photo.dataset.y);
+                let vx = parseFloat(photo.dataset.vx);
+                let vy = parseFloat(photo.dataset.vy);
+                let rotation = parseFloat(photo.dataset.rotation);
+                let rotationSpeed = parseFloat(photo.dataset.rotationSpeed);
+                let isSpinning = photo.dataset.isSpinning === 'true';
+                let spinCounter = parseInt(photo.dataset.spinCounter);
+                
+                // Randomly trigger a spin (5% chance each frame)
+                if (!isSpinning && Math.random() < 0.05) {
+                    photo.dataset.isSpinning = true;
+                    photo.dataset.spinCounter = 0;
+                }
+                
+                // Handle spinning
+                if (isSpinning) {
+                    spinCounter++;
+                    photo.dataset.spinCounter = spinCounter;
+                    rotationSpeed = 15; // Spin fast
+                    
+                    // Stop spinning after 30 frames (full rotation)
+                    if (spinCounter >= 30) {
+                        photo.dataset.isSpinning = false;
+                        photo.dataset.spinCounter = 0;
+                        rotationSpeed = (Math.random() - 0.5) * 2; // Back to normal
+                    }
+                }
+                
+                // Update position
+                x += vx;
+                y += vy;
+                rotation += rotationSpeed;
+                
+                // Bounce off walls
+                if (x <= 0 || x >= gallery.offsetWidth - 200) {
+                    vx *= -1;
+                    x = Math.max(0, Math.min(x, gallery.offsetWidth - 200));
+                }
+                if (y <= 0 || y >= gallery.offsetHeight - 150) {
+                    vy *= -1;
+                    y = Math.max(0, Math.min(y, gallery.offsetHeight - 150));
+                }
+                
+                // Keep rotation between -360 and 360
+                if (Math.abs(rotation) > 360) rotation = rotation % 360;
+                
+                // Update data
+                photo.dataset.x = x;
+                photo.dataset.y = y;
+                photo.dataset.vx = vx;
+                photo.dataset.vy = vy;
+                photo.dataset.rotation = rotation;
+                
+                // Apply styles
+                photo.style.left = x + 'px';
+                photo.style.top = y + 'px';
+                photo.style.transform = `rotate(${rotation}deg)`;
+            });
+            
+            requestAnimationFrame(animate);
+        }
+        
+        animate();
+    </script>
+
+</body>
+
+</html>
